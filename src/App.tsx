@@ -1,6 +1,9 @@
 import './App.css';
 import { ChakraProvider, CSSReset, Box } from '@chakra-ui/react'
-import HookForm from './components/HookForm';
+import Home from './pages/Home';
+import Router from './routes';
+import { Header } from './components/Header';
+import { Footer } from './components/Footer';
 
 
 function App() {
@@ -8,7 +11,7 @@ function App() {
     <ChakraProvider>
       <CSSReset />
       <Box p={4}>
-        <HookForm />
+        <Router />
       </Box>
     </ChakraProvider>
   );
